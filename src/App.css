@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.media {
+  background-color: #f5fafa;
+
+}
+
+.logo {
+  margin-left: -10px;
+  border-radius: 30px;
+}
