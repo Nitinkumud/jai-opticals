@@ -3,6 +3,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { Nav, NavDropdown } from "react-bootstrap";
 import Media from "react-bootstrap/Media";
 import Carousel from "react-bootstrap/Carousel";
+import YoutubeEmbed from "./YoutubeEmbed";
+import SocialFollow from "./SocialFollow"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 function App() {
   return (
@@ -44,7 +49,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
 
-    <h3>We are serving in lock down Call- 8440800800</h3>
+      <h4>We are serving in lock down Call- 8440800800</h4>
       <Carousel fade>
         <Carousel.Item interval={1000}>
           <img
@@ -68,6 +73,23 @@ function App() {
           />
         </Carousel.Item>
       </Carousel>
+      <br></br>
+      <h4>Video Story</h4>
+      <br></br>
+      <Container>
+        <Row>
+          <Col xs={6}>
+            <YoutubeEmbed embedId="nh612G6kzAo" />
+          </Col>
+          <Col xs={6}>
+            <YoutubeEmbed embedId="xlIXlJFSUrI" />
+          </Col>
+        </Row>
+      </Container>
+      <br></br>
+      <footer>
+      <SocialFollow />
+      </footer>
     </div>
   );
 }
